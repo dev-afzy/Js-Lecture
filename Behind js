@@ -1,0 +1,32 @@
+// HOW JS WORK BEHIND THE SCENE
+
+JavaScipt is a HIGH-LEVEL PROTOTYPE-BASED OBJECT-ORIENTED MULTI-PARADIGM INTERPRETED OR JUST -IN-TIME COMPILED DYNAMIC SINGLE-THREADED GARBAGE COLLECTED PROGRAMMING LANGUAGE WITH FIRST-CLASS FUNCTIONS AND A NON-BLOCKING EVENT LOOP CONCURRENCY MODEL
+
+### JS ENGINE
+	Program that excute js code eg:- v8
+	COMPILATION: Entire code is converted into machine code at once, and written to a binary 		             file thta can be executed by a computer
+		     source code ---> portable file machine code ----> program running
+	INTERPRETATION: Interpreter runs through the source code and execute line by line
+		     	source code ----> program running	
+	JUST-IN_TIME(JIT) Complilation: Entire code converted in to mechine code one and 		executed immediately (----MODERN JS  is no more interprted language it's JIT ---)
+	source code ----> machine code --runs program immediately---> program running
+	
+	
+	1. EXECUTION CONTEXT: Environement which is peice of javascript is executed stores all 			the necassary information for some code to be execute
+	2. Exactly one global exuction context(EC): Default context created for code that not    			inside any function (top-level)
+	3. One execution context per function: for each function call a new execution context is 			created
+	
+	WHATS INSIDE EXECUTION CONTEXT?
+	1. Variable Environment
+		> let, const var decleration
+		> Functions
+		> arguments object
+	2. Scope chain
+	3. this keyword
+	(This three things are generated during "creation phase" right before execution)
+	
+	SCOPE CHAIN
+	-----------
+	How our program variable are organaized and accessed. Where do variable live? or where 		we can access certain variable and where not?
+	LEXICAL SCOPING: Scoping is controlled by placement of functions and block in the code
+	SCOPE: Space or environment in which certain variable is declared(variable enironment 		in case of function). There is a global scope, function scope and block scope

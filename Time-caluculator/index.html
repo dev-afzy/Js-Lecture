@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <div class="row">
+          <div class="col form-group">
+            <div class="inputSection">
+              <label for="h"> Hour</label>
+              <input
+                class="form-control"
+                type="number"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                pattern="\d*"
+                name="h"
+                maxlength="2"
+                id="hour"
+              />
+            </div>
+            <div class="inputSection">
+              <label for="m"> Minutes</label>
+              <input
+                type="number"
+                class="form-control"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                pattern="\d*"
+                maxlength="2"
+                name="m"
+                id="min"
+              />
+            </div>
+            <button type="submit" class="calculate" id="calculate">
+              Calculate
+            </button>
+            <button
+              type="button"
+              class="calculate"
+              id="reset"
+              style="background: red; width: 70px"
+            >
+              clear
+            </button>
+          </div>
+          <div class="col">
+            <div class="row history-values" id="time-history">
+              <div class="col"></div>
+            </div>
+            <div class="row">
+              <div class="col align-self-end total-time" id="total-time"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="timeCalcutor.js"></script>
+</html>

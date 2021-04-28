@@ -1,0 +1,16 @@
+/// 	ARRAY METHODS ///////
+----> Add elements
+push() - Add To Last index
+unfist() - Add To first index
+
+----> Remove Elements
+pop() - remove from last index
+shift() - remove from first index
+
+
+----> Get index of an element
+indexOf('element') ---> array.indexOf('element')
+
+
+----> To check element exist or not in the array
+includes('element') ---> Will Return a boolean value according to the availability of an element in the array (strictly check type coercion)

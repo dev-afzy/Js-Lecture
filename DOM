@@ -1,0 +1,17 @@
+// DOM manipulation
+
+1. document.queySelector ---> to select an element
+	  a. use '.' to access the elemwnt using class.
+	  b. Use '#' to access the element using Id.
+
+2. document.querySelector('input').value --> To access input value
+   	a. Will retrive the value as a string
+3. document.querySelector('input').value = abc ---> to store the value
+4. document.querySelector('element').textContent ---> to access text of an element
+5. document.querySelectorAll(element) ---> to get all element with perticular class or tag
+6. document.querySelector(element).classList
+	a. classList.add ---> to add new class to an element
+	b. classList.remove --> to remove class list from element
+	c. classList.contains ---> to check clas exist or not in the element
+	d. classList.toggle ----> if class not in the element it will add like vice versa
+7. document.querySelector(element).addEventListener(eventType, function)
